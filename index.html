@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background-color: #f3e5d8;
+      width: 100%;
+    }
+
+    .card {
+      background-color: #ffffff;
+      margin: 0 20%;
+      padding: 45px 20px;
+      border-radius: 25px;
+    }
+
+    .card-content {
+      border-radius: 25px;
+      margin: 0 3%;
+    }
+
+    .omelette-pic {
+      width: 100%;
+      height: 30vh;
+      border-radius: 25px;
+    }
+
+    .card-content-title {
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 35px;
+    }
+
+
+    .card-time {
+      background-color: #fff7fc;
+      border-radius: 25px;
+      padding: 10px;
+      margin: 5% 0;
+    }
+
+    .card-time p {
+      padding: 0px 0 0 15px;
+      color: #723d54;
+      font-weight: 900;
+    }
+
+    .card-time li {
+      padding: 10px;
+      color: #a78091;
+    }
+
+    .card-time span {
+      font-weight: 700;
+    }
+
+    .card-ingredients p {
+      color: #884b3d;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 25px;
+    }
+
+    .card-ingredients li {
+      padding-bottom: 15px;
+      color: #906b64;
+    }
+
+    .card-instructions p {
+      color: #884b3d;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 25px;
+    }
+
+    .card-instructions li {
+      padding-bottom: 15px;
+      color: #906b64;
+    }
+
+    .table-nutrition {
+      width: 100%;
+    }
+
+    .p-nutrition {
+      color: #884b3d;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 25px;
+    }
+
+    .row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .col {
+      display: grid;
+      padding: 10px;
+    }
+
+    .col span {
+      color: #884b3d;
+      font-family: "Young Serif", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+
+        <img src="./assets/images/image-omelette.jpeg" alt="omelette pic" class="omelette-pic" />
+
+        <p class="card-content-title"> Simple Omelette Recipe </p>
+
+        <p class="title-text"> An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs
+          cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+        <div class="card-time">
+
+          <p>Preparation time</p>
+
+          <ul>
+            <li><span>Total:</span> Approximately 10 minutes</li>
+            <li><span>Preparation:</span> 5 minutes</li>
+            <li><span>Cooking:</span> 5 minutes</li>
+            </li>
+          </ul>
+
+
+        </div>
+
+
+        <div class="card-ingredients">
+
+          <p>Ingredients</p>
+
+          <ul>
+            <li>2-3 large eggs </li>
+            <li> Salt, to taste </li>
+            <li> Pepper, to taste </li>
+            <li> 1 tablespoon of butter or oil </li>
+            <li> Optional fillings: cheese, diced vegetables, cooked meats, herbs </li>
+          </ul>
+
+        </div>
+
+        <hr>
+
+
+        <div class="card-instructions">
+
+          <p>Instructions</p>
+
+          <ol>
+            <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+              You can add a tablespoon of water or milk for a fluffier texture. </li>
+            <li> Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
+            </li>
+            <li> Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+              the eggs evenly coat the surface. </li>
+            <li> Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the
+              middle, sprinkle your chosen fillings over one half of the omelette. </li>
+            <li> Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the
+              fillings. Let it cook for another minute, then slide it onto a plate. </li>
+            <li> Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the
+              fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li> Enjoy: Serve hot, with additional salt and pepper if needed.
+            </li>
+            </ul>
+
+        </div>
+
+        <hr>
+
+        <div class="card-nutritioin">
+
+          <p class="p-nutrition">Nutrition</p>
+
+          <p>The table below shows nutritional values per serving without the additional fillings. </p>
+          <div class="table-nutrition">
+            <div class="row">
+              <div class="col">Calories</div>
+              <div class="col"><span>277kcal</span>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col">Carbs</div>
+              <div class="col"><span>0g</span></div>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col">Protein</div>
+              <div class="col"><span>20g</span> </div>
+              <span></span>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col">Fat</div>
+              <div class="col"><span>22g</span></div>
+            </div>
+            <hr>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
